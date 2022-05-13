@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Angelo Martinez</title>
+
+     <!-- ==== CSS ==== -->
+     <link rel="stylesheet" href="./style.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">ZION</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a class="active" href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+
+    <!---->
+    <section class="project" id="project">
+
+        <div class="container">
+        
+            <div class="buttons">
+
+                <div class="w3-container w3-third">
+                    <img src="Project_Images/project1.jpg" style="width:60px; height:60px;" 
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+
+                <div class="w3-container w3-third">
+                    <img src="Project_Images/project2_Java.jpg" style="width:60px; height:60px;" 
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+
+                <div class="w3-container w3-third">
+                    <img src="Project_Images/project3_Java.jpg" style="width:60px; height:60px;" 
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+
+                <div class="w3-container w3-third">
+                    <img src="Project_Images/project4_App.png" style="width:60px; height:60px;" 
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+
+                <div class="w3-container w3-third">
+                    <img src="Project_Images/project5_AI_app.png" style="width:60px; height:60px;" 
+                    onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+            </div>
+            <p>This Projects are created through my college journey, some are Task Perfomance and the others are made through our projects</p>
+        </div>
+
+
+        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+            <span class="w3-button w3-red w3-hover-cyan w3-xlarge w3-display-topright">&times;</span>
+            <div class="w3-modal-content w3-animate-zoom">
+              <img id="img01" style="width:100%">
+            </div>
+        </div>
+
+    </section>
+
+
+    <script>
+
+        function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        }
+
+        /* Menu */
+        const menuBtn = document.querySelector ('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click' ,()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+    </script>
+
+</body>
+</html>

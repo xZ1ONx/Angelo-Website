@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Angelo Martinez</title>
+
+     <!-- ==== CSS ==== -->
+     <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">ZION</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+
+    <section class="about" id="about">
+        <div class="h4">About Me</h4>
+        <div class="line"></div>
+        <div class="about-content">        
+            <h3>I'm an IT student and this is my Personal Website. blah blah blah blah  blah blah blah blah </h3>
+        </div>
+
+    </section>
+    
+    
+    <script>
+        const menuBtn = document.querySelector ('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click' ,()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Angelo Martinez</title>
+
+     <!-- ==== CSS ==== -->
+     <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">ZION</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="profile.html">Profile</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img src="img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+
+    <!---->
+    <section class="profile" id="profile">
+        <div class="profile-content">
+            <h1>PROFILE</h1>
+            <div class="line"></div>    
+            <h3><span>Name:</span> Angelo Gabriel A. Martinez </h3>
+            <h3><span>Date of Birth:</span> September 15, 2000 </h3>
+            <h3><span>Hometown:</span> Napindan, Taguig City </h3>
+            <br>
+
+            <div class="text">Education:</div>
+                <ul>
+                    <li>St. Theodore Perpetual School</li>
+                    <li>Trinitiy Baptist Academy</li>
+                    <li>STI College Global City</li>
+                </ul>
+
+            <br>
+            <div class="text">Skills:</div>
+                <ul>
+                    <li>Programming</li>
+                    <li>Editting</li>
+                    <li>SAP Business</li>
+                </ul>
+
+                <br>
+                <a href="CurriculumVitae.pdf" class="ctn">Curriculum Vitae</a>
+        </div>
+    </section>
+
+    <!--
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+    -->
+
+    <script>
+        const menuBtn = document.querySelector ('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click' ,()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+    </script>
+
+</body>
+</html>

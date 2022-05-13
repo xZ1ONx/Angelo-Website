@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Angelo Martinez</title>
+
+     <!-- ==== CSS ==== -->
+     <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">ZION</h1>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+        <img src="img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+
+    <section class="contact" id="contact">
+        <div class="contact-content">
+            <h2>Contacts</h2>
+            <div class="line"></div>    
+
+            <img class="one" src="images/email2.png" alt="Email" style="width:42px;height:42px;">
+            <h3>agm10915@gmail.com</h3>
+        </br>
+            <a href="https://www.facebook.com/m.angelo.Z1ON/"><img class="one" src="images/fb.png" alt="Facebook" style="width:42px;height:42px;"></a>
+            <a href="https://www.instagram.com/gelo_martinez_/"><img class="one" src="images/instagram.png" alt="Instagram" style="width:42px;height:42px;"></a>
+
+            <a href="https://discord.gg/fyuYFxS6"><img class="one" src="images/discord.png" alt="Discord" style="width:42px;height:42px;"></a>
+            <a href="https://twitter.com/m_angelo_z"><img class="one" src="images/twitter.png" alt="Twitter" style="width:42px;height:42px;"></a>
+
+        </div>
+    </section>
+    
+    <script>
+        const menuBtn = document.querySelector ('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click' ,()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+
+    </script>
+
+</body>
+</html>
