@@ -201,14 +201,6 @@ header{
     font-family: "Times New Roman", Times, serif;
 }
 .container {
-    /*background-color: rgba(61, 60, 60, 0.719);
-    max-width: 300px;
-    height: 450px;
-    position: static;
-    margin: 1vh auto 0 auto;
-    box-shadow: 0px 0px 43px 17px #d4af37c5;
-    border-radius: 10px;*/
-
     margin-bottom: 90px;
     color: #29D99A;
     text-align: center;
@@ -286,8 +278,6 @@ img.one{
 }
 
 
-
-
 /* Menu */
 .menu-btn{
     position: absolute;
@@ -319,7 +309,6 @@ img.one{
         background-color: #486872;
         margin-top: -900px;
         transition: all 0.5s ease;
-        background-image: url('images/BlackWood');
         background-size: cover;
         background-position: center;
     }
