@@ -201,6 +201,7 @@ header{
     font-family: "Times New Roman", Times, serif;
 }
 .container {
+
     margin-bottom: 90px;
     color: #29D99A;
     text-align: center;
@@ -276,6 +277,8 @@ header{
 img.one{
     margin: 6px;
 }
+
+
 
 
 /* Menu */
