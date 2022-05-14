@@ -56,7 +56,7 @@ header{
     justify-content: center;
 }
 .header-content{
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     color: #29D99A;
     text-align: center;
     background-color: rgba(61, 60, 60, 0.719);
@@ -316,7 +316,7 @@ img.one{
         width: 100%;
         height: 100vh;
         justify-content: center;
-        background-color: #484872;
+        background-color: #486872;
         margin-top: -900px;
         transition: all 0.5s ease;
         background-image: url('images/BlackWood');
