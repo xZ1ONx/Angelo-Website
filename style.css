@@ -312,7 +312,7 @@ img.one{
         background-color: #486872;
         margin-top: -900px;
         transition: all 0.5s ease;
-        background-image: url('images/BlackWood');
+        background-image: url('images/BlackWood.png');
         background-size: cover;
         background-position: center;
     }
