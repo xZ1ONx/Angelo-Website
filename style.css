@@ -214,7 +214,6 @@ header{
 }
 
 .buttons {
-    display: grid;
     border-radius: 8px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
